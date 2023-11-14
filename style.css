@@ -6,7 +6,7 @@ body {
 .main {
   width: 100%;
   height: 100vh;
-  background-image: url(./image/asdasd.jpg);
+  background-image: url(./asdasd.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
