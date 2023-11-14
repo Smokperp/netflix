@@ -1,0 +1,95 @@
+@mixin size{
+    color: white;
+    text-align: center;
+    font-size: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./image/asdasd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    .header{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            font-size: 70%;
+        }
+        h2{
+            @include size()
+        }
+        h3{
+            @include size()
+        }
+        .header1{
+            width: 50%;
+            .reg{
+                form{
+                    display: flex;
+                    justify-content: center;
+                    
+                }
+                input{
+                    background-color: rgba(0, 0, 0, 0.096);
+                    border: 3px solid black;
+                    padding-left: 25px;
+                    width: 45%;
+                    height: 35px;
+                    color: white;
+                    border-radius: 0.5rem;
+                }
+                button{
+                    width: 45%;
+                    height: 37px;
+                    background: red;
+                    font-size: 25%;
+                    color: white;
+                    border: none;
+                    border-radius: 0.5rem;
+                }
+                ::placeholder{
+                    font-size: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 522px){
+    .main{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+    .button{
+        width: 25%;
+        height: 25px;
+    }
+    .input{
+        width: 25%;
+        height: 25px;
+    }
+    ::placeholder{
+        font-size: 60%;
+    }
+    
+}
